@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paloma J. Pérez - Coaching Inmobiliario en la Costa del Sol. Más de 15 años de experiencia asesorando en la compra y venta de propiedades de lujo en Marbella.">
+    <title>Paloma J. Pérez - Coaching Inmobiliario Costa del Sol</title>
+    <link rel="icon" href="data:,">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .delay-200 {
+            animation-delay: 200ms;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a1a1a',
+                        secondary: '#4a4a4a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-montserrat">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-primary">Paloma J. Pérez</a>
+        <div class="hidden md:flex space-x-8">
+            <a href="#inicio" class="text-secondary hover:text-primary transition-colors">Inicio</a>
+            <a href="#servicios" class="text-secondary hover:text-primary transition-colors">Servicios</a>
+            <a href="#contacto" class="text-secondary hover:text-primary transition-colors">Contacto</a>
+            <a href="#contacto" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">Reservar Cita</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-primary focus:outline-none" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full z-50">
+        <div class="container mx-auto px-4 py-4 space-y-4">
+            <a href="#inicio" class="block text-secondary hover:text-primary transition-colors">Inicio</a>
+            <a href="#servicios" class="block text-secondary hover:text-primary transition-colors">Servicios</a>
+            <a href="#contacto" class="block text-secondary hover:text-primary transition-colors">Contacto</a>
+            <a href="#contacto" class="block bg-primary text-white px-4 py-2 rounded-lg text-center hover:bg-gray-800 transition-colors">Reservar Cita</a>
+        </div>
+    </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 relative bg-black">
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="max-w-3xl mx-auto text-center text-white">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">Tu Experta Inmobiliaria en la Costa del Sol</h1>
+                <p class="text-xl mb-8 animate-fade-in delay-200">Maximiza tu inversión y minimiza tus riesgos. Con 15 años de experiencia local, te ofrezco la estrategia y el asesoramiento 100% independiente que necesitas.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#contacto" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 duration-300 shadow-lg">Consulta Gratuita</a>
+                    <a href="#servicios" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all transform hover:scale-105 duration-300">Conoce Mis Servicios</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <img src="https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg" alt="Luxury Villa Marbella" class="absolute inset-0 w-full h-full object-cover -z-10">
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-4xl font-bold text-primary mb-2">15+</h3>
+                    <p class="text-secondary">Años de Experiencia</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-primary mb-2">500+</h3>
+                    <p class="text-secondary">Propiedades Asesoradas</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-primary mb-2">98%</h3>
+                    <p class="text-secondary">Clientes Satisfechos</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-primary mb-2">100%</h3>
+                    <p class="text-secondary">Independiente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg" alt="Paloma J. Pérez" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-6">Conoce a Paloma J. Pérez</h2>
+                    <p class="text-secondary mb-6">Con más de 15 años de experiencia en el sector inmobiliario de la Costa del Sol, me he especializado en ofrecer un servicio de consultoría y coaching inmobiliario completamente independiente y personalizado.</p>
+                    <h3 class="text-xl font-bold text-primary mb-4">Mi Misión</h3>
+                    <p class="text-secondary mb-6">Transformar la compra o venta de tu propiedad en una experiencia segura, rentable y sin estrés. Mi compromiso es contigo y solo contigo, ofreciéndote la estrategia más inteligente para maximizar el valor de tu inversión.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            15 años de experiencia especializada en Costa del Sol
+                        </li>
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Conocimiento profundo del mercado de lujo en Marbella
+                        </li>
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Asesoramiento 100% independiente y personalizado
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary text-center mb-12">Servicios de Coaching Inmobiliario</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Diagnóstico y Estrategia de Venta</h3>
+                        <p class="text-secondary mb-4">Un servicio intensivo para vendedores que desean una hoja de ruta profesional para maximizar el precio de su propiedad.</p>
+                        <div class="flex items-center mb-4">
+                            <span class="text-gray-400 line-through text-xl">520€</span>
+                            <span class="text-primary font-bold text-3xl ml-3">390€</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Entrega en 5 días
+                        </li>
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Sesión de consultoría de 2 horas
+                        </li>
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Análisis Comparativo de Mercado (ACM)
+                        </li>
+                    </ul>
+                    <div class="space-y-3">
+                        <a href="#contacto" class="block text-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition-colors">Reservar Consulta</a>
+                        <a href="https://wa.me/34649931171?text=Hola%20Paloma%2C%20me%20interesa%20el%20servicio%20de%20Diagnóstico%20y%20Estrategia%20de%20Venta" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Personal Shopper Inmobiliario</h3>
+                        <p class="text-secondary mb-4">Servicio completo de búsqueda y negociación que garantiza una compra segura y al mejor precio.</p>
+                        <div class="flex items-center mb-4">
+                            <span class="text-gray-400 line-through text-xl">1.875€</span>
+                            <span class="text-primary font-bold text-3xl ml-3">1.500€</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Búsqueda y preselección de propiedades
+                        </li>
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Acompañamiento en visitas
+                        </li>
+                        <li class="flex items-center text-secondary">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Análisis técnico, legal y de mercado
+                        </li>
+                    </ul>
+                    <div class="space-y-3">
+                        <a href="#contacto" class="block text-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition-colors">Reservar Consulta</a>
+                        <a href="https://wa.me/34649931171?text=Hola%20Paloma%2C%20me%20interesa%20el%20servicio%20de%20Personal%20Shopper%20Inmobiliario" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-primary text-center mb-12">Solicita Tu Consulta Gratuita</h2>
+                <form id="contactForm" class="space-y-6" onsubmit="handleSubmit(event)">
+                    <div>
+                        <label for="nombre" class="block text-secondary mb-2">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-primary">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-secondary mb-2">Email *</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-primary">
+                    </div>
+                    <div>
+                        <label for="telefono" class="block text-secondary mb-2">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-primary">
+                    </div>
+                    <div>
+                        <label for="consulta" class="block text-secondary mb-2">Tipo de Consulta *</label>
+                        <select id="consulta" name="consulta" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-primary">
+                            <option value="">Selecciona una opción</option>
+                            <option value="vender">Quiero vender mi propiedad</option>
+                            <option value="comprar">Quiero comprar una propiedad</option>
+                            <option value="inversion">Consulta de inversión</option>
+                            <option value="general">Consulta general</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje" class="block text-secondary mb-2">Cuéntame sobre tu proyecto</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-primary"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition-all transform hover:scale-105 duration-300 shadow-lg">
+                        Enviar Consulta
+                    </button>
+                    <div id="formMessage" class="text-center hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Información de Contacto</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="tel:+34649931171" class="hover:text-gray-300 transition-colors">+34 649 931 171</a>
+                        </li>
+                        <li>
+                            <a href="mailto:paloma@palomajperez.com" class="hover:text-gray-300 transition-colors">paloma@palomajperez.com</a>
+                        </li>
+                        <li>Costa del Sol, Marbella</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Horario de Atención</h3>
+                    <ul class="space-y-2">
+                        <li>Lunes - Viernes: 9:00 - 18:00</li>
+                        <li>Sábados: 10:00 - 14:00</li>
+                        <li>Domingos: Cerrado</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#contacto" class="hover:text-gray-300 transition-colors">Agenda una Cita</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/34649931171?text=Hola%20Paloma%2C%20me%20gustaría%20más%20información%20sobre%20tus%20servicios" class="hover:text-gray-300 transition-colors">WhatsApp Directo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>© 2023 Paloma J. Pérez - Coaching Inmobiliario. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
