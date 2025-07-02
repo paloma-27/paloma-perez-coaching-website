@@ -1,0 +1,196 @@
+/* Custom styles to complement Tailwind CSS */
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Additional hover effects for buttons */
+.hover-grow {
+    transition: transform 0.2s;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Custom styles for form elements */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+/* Hero section background overlay */
+.hero-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+/* Custom spacing for sections */
+.section-spacing {
+    padding: 6rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-spacing {
+        padding: 4rem 0;
+    }
+}
+
+/* Custom transitions */
+.transition-custom {
+    transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats counter animation */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-number {
+    animation: countUp 1s ease-out forwards;
+}
+
+/* Custom list style */
+.custom-list li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.custom-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+}
+
+/* Form validation styles */
+.form-error {
+    border-color: #dc2626;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Success message styles */
+.success-message {
+    color: #059669;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Custom button styles */
+.btn-custom {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-custom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:hover::after {
+    transform: translateX(0);
+}
+
+/* Footer link hover effect */
+.footer-link {
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+    background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
